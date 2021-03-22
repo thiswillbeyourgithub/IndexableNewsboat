@@ -116,7 +116,7 @@ print("Saving entries as txt...")
 for i in tqdm(db.index):
     save_entry_as_file(i)
 
-print("Compressing as a tar archive...")
+print("Compressing as a zip archive...")
 os.system(f"cd /tmp/IndexableNewsboat && zip -9 {args['output_dir']}/IndexableNewsboat.zip ./*")
 
 print("Cleaning up...")
