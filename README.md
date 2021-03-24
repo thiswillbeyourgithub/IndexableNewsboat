@@ -1,5 +1,5 @@
 # IndexableNewsboat
-Makes the db of [newsboat](https://newsboat.org/) (a great rss reader) indexable by desktop search engine like [recoll](https://www.lesbonscomptes.com/recoll/) or [docfetcher](https://sourceforge.net/p/docfetcher/wiki/).
+Makes the databse of [newsboat](https://newsboat.org/) (a great rss reader) indexable by desktop search engine like [recoll](https://www.lesbonscomptes.com/recoll/) or [docfetcher](https://sourceforge.net/p/docfetcher/wiki/).
 
 
 ## Please read:
@@ -8,8 +8,8 @@ Makes the db of [newsboat](https://newsboat.org/) (a great rss reader) indexable
 * **Will this change my database?** No, it makes a copy before hand and doesn't change a thing.
 * **What version of python should I use?** It has been tested on Python 3.9
 * **I'd like to index my anki database into recoll, is it possible?** I created just that [over there](https://github.com/thiswillbeyourgithub/IndexableAnki)
-* **How does it work?** It finds your databse, copies it inside /tmp (otherwise it might be locked), loads it into pandas, drops useless columns, saves each entry as a .txt file, zips all the txt files together, moves the zip in the desired folder, deletes the txt files and the temporary db.
-* **Is it cross platform?** Currently no, only linux, and OSX could maybe work quite easily. It's on the todo list but don't be afraid to ask if you think you need this.
+* **How does it work?** It finds your database, copies it inside /tmp (otherwise it might be locked), loads it into pandas, drops useless columns, saves each entry as a .txt file, zips all the txt files together, moves the zip in the desired folder, deletes the txt files and the temporary db.
+* **Is it cross platform?** Currently no, only Linux, and OSX could maybe work quite easily. It's on the todo list but don't be afraid to ask if you think you need this.
 
 
 ## Usage:
