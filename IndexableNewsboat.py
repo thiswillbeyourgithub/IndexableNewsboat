@@ -98,7 +98,7 @@ os.system('mkdir -p "/tmp/IndexableNewsboat/"')
 
 
 def save_entry_as_file(entry_id):
-    with open(f'/tmp/IndexableNewsboat/{entry_id}.txt',
+    with open(f'/tmp/IndexableNewsboat/Newsboat_{entry_id}.txt',
               'w', encoding="utf-8") as f:
         string = "NEWSBOAT RSS EXPORT AS TXT\n"
         string += f"id: {entry_id}\n"
