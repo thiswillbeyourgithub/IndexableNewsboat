@@ -37,7 +37,8 @@ from tqdm import tqdm
 parser = argparse.ArgumentParser()
 parser.add_argument("-n",
                     "--newsboat_path",
-                    help="The path to the newsboat folder(ex: /home/USER/snap/newsboat/current/.newsboat)",
+                    help="The path to the newsboat folder(ex:\
+/home/USER/snap/newsboat/current/.newsboat)",
                     dest="nwb_loc",
                     metavar="NEWSBOAT_PATH")
 parser.add_argument("-o",
@@ -90,7 +91,6 @@ def text_processor(content):
 
 print("Processing text content...")
 db["content"] = [text_processor(content) for content in tqdm(db["content"])]
-
 
 
 os.system('rm -r "/tmp/IndexableNewsboat"')
