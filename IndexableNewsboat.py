@@ -118,7 +118,7 @@ for i in tqdm(db.index):
 
 print("Compressing as a zip archive...")
 os.system(f"rm -r {args['output_dir']}/IndexableNewsboat.zip")
-os.system(f"cd /tmp/IndexableNewsboat && zip -9 {args['output_dir']}/IndexableNewsboat.zip ./*")
+os.system(f"cd /tmp/IndexableNewsboat && zip -9 {args['output_dir']}/IndexableNewsboat.zip *")
 
 print("Cleaning up...")
 os.system("rm -r /tmp/IndexableNewsboat")
